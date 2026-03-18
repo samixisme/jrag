@@ -1,0 +1,1 @@
+export default function B2CPage() { return <div>B2C Page</div>; }

@@ -1,0 +1,1 @@
+export default function FAQPage() { return <div>Shared FAQ Page</div>; }

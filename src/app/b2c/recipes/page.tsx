@@ -1,0 +1,1 @@
+export default function RecipesPage() { return <div>B2C Recipes Page</div>; }

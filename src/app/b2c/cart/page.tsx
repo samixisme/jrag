@@ -1,0 +1,1 @@
+export default function CartPage() { return <div>B2C Cart Page</div>; }

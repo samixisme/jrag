@@ -1,0 +1,1 @@
+export default function HistoryPage() { return <div>B2B History Page</div>; }

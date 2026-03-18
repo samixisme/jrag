@@ -1,0 +1,1 @@
+export default function ImpactPage() { return <div>Shared Impact Page</div>; }

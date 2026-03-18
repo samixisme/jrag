@@ -1,0 +1,1 @@
+export default function AccountPage() { return <div>B2C Account Page</div>; }

@@ -1,0 +1,1 @@
+export default function MentionsPage() { return <div>Legal Mentions Page</div>; }

@@ -1,0 +1,1 @@
+export default function CGVPage() { return <div>Legal CGV Page</div>; }

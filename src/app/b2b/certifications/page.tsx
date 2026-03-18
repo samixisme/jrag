@@ -1,0 +1,1 @@
+export default function CertificationsPage() { return <div>B2B Certifications Page</div>; }

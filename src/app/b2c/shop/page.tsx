@@ -1,0 +1,1 @@
+export default function ShopPage() { return <div>B2C Shop Page</div>; }

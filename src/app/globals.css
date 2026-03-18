@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-rio-navy: #002B5C;
+  --color-living-orange: #FF6B00;
+  --color-dakhla-sand: #F0EAD6;
+  --color-heritage-blue: #2A6DB5;
+  --color-atmosphere-blue: #A4D8E5;
+
+  --font-sans: var(--font-montserrat);
+  --font-serif: var(--font-playfair);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #002B5C; /* Using Rio Navy as default text */
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
