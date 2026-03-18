@@ -3,6 +3,8 @@ import { Montserrat, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import MotionProvider from "@/components/MotionProvider";
+import NewsletterPopup from "@/components/NewsletterPopup";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -17,8 +19,10 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Jaimetchoujena Rio Aqua Group (JRAG) | The Purest Treasure of the Desert Lagoon",
-  description: "Cultivating the sea, sharing excellence. Rigorous by Nature. Pure by Design. Premium shellfish from the Dakhla Lagoon.",
+  title:
+    "Jaimetchoujena Rio Aqua Group (JRAG) | Le plus pur tresor de la lagune",
+  description:
+    "Conchyliculture premium a Dakhla. Rigueur, noblesse et transparence pour les professionnels et les particuliers.",
 };
 
 export default function RootLayout({
@@ -27,14 +31,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body
+        suppressHydrationWarning
         className={`${montserrat.variable} ${playfair.variable} font-sans antialiased flex flex-col min-h-screen`}
       >
         <Navbar />
-        <main className="flex-grow">
-          {children}
-        </main>
+        <MotionProvider>
+          <main className="flex-grow">{children}</main>
+        </MotionProvider>
+        <NewsletterPopup />
         <Footer />
       </body>
     </html>

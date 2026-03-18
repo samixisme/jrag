@@ -6,10 +6,10 @@ test('Home page renders B2B and B2C panels', () => {
   render(<Home />)
   
   // Check B2B panel
-  expect(screen.getByText(/Accès Pro/i)).toBeDefined()
-  expect(screen.getByText(/Professionnels/i)).toBeDefined()
+  expect(screen.getByText(/Espace Professionnel/i)).toBeDefined()
+  expect(screen.getByText(/Rigoureux par Nature/i)).toBeDefined()
   
   // Check B2C panel
-  expect(screen.getByText(/Boutique/i)).toBeDefined()
-  expect(screen.getByText(/Particuliers/i)).toBeDefined()
+  expect(screen.getByText(/Boutique Privée/i)).toBeDefined()
+  expect(screen.getByText(/Le plus pur trésor de la lagune/i)).toBeDefined()
 })
